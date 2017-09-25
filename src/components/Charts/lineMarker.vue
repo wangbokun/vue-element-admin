@@ -44,7 +44,7 @@ export default {
       this.chart = echarts.init(document.getElementById(this.id))
 
       this.chart.setOption({
-        backgroundColor: '#394056',
+        backgroundColor: '#F1F1F3',
         title: {
           text: '请求数',
           textStyle: {

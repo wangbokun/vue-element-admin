@@ -34,7 +34,7 @@ export const constantRouterMap = [
     redirect: '/introduction/index',
     icon: 'people',
     noDropdown: true,
-    children: [{ path: 'index', component: _import('introduction/index'), name: '简述' }]
+    children: [{ path: 'index', component: _import('introduction/index'), name: '服务器' }]
   }
 ]
 
@@ -55,13 +55,13 @@ export const asyncRouterMap = [
     noDropdown: true,
     children: [{ path: 'index', component: _import('permission/index'), name: '权限测试页', meta: { role: ['admin'] }}]
   },
-  {
-    path: '/icon',
-    component: Layout,
-    icon: 'icon',
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('svg-icons/index'), name: 'icons' }]
-  },
+  // {
+  //   path: '/icon',
+  //   component: Layout,
+  //   icon: 'icon',
+  //   noDropdown: true,
+  //   children: [{ path: 'index', component: _import('svg-icons/index'), name: 'icons' }]
+  // },
   {
     path: '/components',
     component: Layout,
@@ -122,26 +122,26 @@ export const asyncRouterMap = [
       { path: 'tab/index', icon: 'tab', component: _import('example/tab/index'), name: 'Tab' }
     ]
   },
-  {
-    path: '/error',
-    component: Layout,
-    redirect: 'noredirect',
-    name: '错误页面',
-    icon: '404',
-    children: [
-      { path: '401', component: _import('errorPage/401'), name: '401' },
-      { path: '404', component: _import('errorPage/404'), name: '404' }
-    ]
-  },
-  {
-    path: '/errlog',
-    component: Layout,
-    redirect: 'noredirect',
-    name: 'errlog',
-    icon: 'bug',
-    noDropdown: true,
-    children: [{ path: 'log', component: _import('errlog/index'), name: '错误日志' }]
-  },
+  // {
+  //   path: '/error',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: '错误页面',
+  //   icon: '404',
+  //   children: [
+  //     { path: '401', component: _import('errorPage/401'), name: '401' },
+  //     { path: '404', component: _import('errorPage/404'), name: '404' }
+  //   ]
+  // },
+  // {
+  //   path: '/errlog',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: 'errlog',
+  //   icon: 'bug',
+  //   noDropdown: true,
+  //   children: [{ path: 'log', component: _import('errlog/index'), name: '错误日志' }]
+  // },
   {
     path: '/excel',
     component: Layout,
@@ -154,15 +154,15 @@ export const asyncRouterMap = [
       { path: 'upload', component: _import('excel/uploadExcel'), name: 'upload excel' }
     ]
   },
-  {
-    path: '/theme',
-    component: Layout,
-    redirect: 'noredirect',
-    name: 'theme',
-    icon: 'theme',
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('theme/index'), name: '换肤' }]
-  },
+  // {
+  //   path: '/theme',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: 'theme',
+  //   icon: 'theme',
+  //   noDropdown: true,
+  //   children: [{ path: 'index', component: _import('theme/index'), name: '换肤' }]
+  // },
 
   { path: '*', redirect: '/404', hidden: true }
 ]
